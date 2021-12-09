@@ -199,7 +199,7 @@
 }
 
 .modal-content .item {
-  margin-left: 100px;
+  margin: 0 auto;
   margin-bottom: 20px;
 }
 
@@ -223,4 +223,28 @@
     max-width: 1536px;
     width: 97%;
   }
-}/*# sourceMappingURL=basket.css.map */
+}
+
+@media (max-width: 770px) {
+  .products_main_head {
+    flex-direction: column;
+  }
+  .products_main_head_right {
+    margin: 0 auto;
+  }
+
+  .modal-content {
+
+    width: 80%;
+  }
+
+}
+@media (max-width: 400px) {
+  .modal-content .item{
+    width: 100%;
+  }
+  .modal-content .item_2{
+    width: 90%;
+  }
+
+}

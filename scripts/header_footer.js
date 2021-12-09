@@ -7,7 +7,7 @@ function fillHeader() {
     <div class="header">
     <div class="main_menu">
     <div class="logo">
-    <a href="index.html"><img class="logo_item" src="img/logo.png" alt="Logo"></a>
+    <a href="index.html"><img class="logo_item" src="img/Logo.png" alt="Logo"></a>
     </div>
     <div class="menu">
     <div class="menu_left">
@@ -34,9 +34,10 @@ function fillHeader() {
 function fillHeader_1() {
     let Container = document.querySelector(".menu_bottom");
     Container.innerHTML = `
+    <div class="top">
     <div id="nav">
     <div class="nav_menu">
-    <p>Каталог товаров</p>
+    <p>Каталог</p>
     <div class="nav_menu_list">
     <div class="nav_menu_list_item"><a href="catalog_1.html" class="nev_item">Радиоуправляемые игрушки</a></div>
     <div class="nav_menu_list_item"><a href="catalog_2.html" class="nev_item">Развивающие игрушки</a></div>
@@ -53,27 +54,31 @@ function fillHeader_1() {
     
     <form class="find" method="get" action="./search.html">
         <input class="find_item" type="text" onfocus="this.value=''" value="Поиск по товарам" name="query">
-        <button type="submit_1">Поиск</button>
+        <div><button type="submit_1">Поиск</button></div>
     </form>
+    </div>
+
+
+
     <div class="menu_right_main">
-    <a href="entry.html">
-    <div class="menu_right_main_item">
-    <img src="img/войти.png" alt="">
-    <div class="header_item_text">Войти</div>
-    </div>
-    </a>
-    <a href="favorites.html">
-    <div class="menu_right_main_item">
-    <img src="img/избранное.png" alt="">
-    <div class="header_item_text">Избранное</div>
-    </div>
-    </a>
-    <a href="basket.html">
-    <div class="menu_right_main_item">
-    <img src="img/корзина.png" alt="">
-    <div class="header_item_text">Корзина</div>
-    </div>
-    </a>
+        <a href="entry.html">
+            <div class="menu_right_main_item">
+                <img src="img/войти.png" alt="">
+                <div class="header_item_text">Войти</div>
+            </div>
+        </a>
+        <a href="favorites.html">
+            <div class="menu_right_main_item">
+                <img src="img/избранное.png" alt="">
+                <div class="header_item_text">Избранное</div>
+            </div>
+        </a>
+        <a href="basket.html">
+            <div class="menu_right_main_item">
+                <img src="img/корзина.png" alt="">
+                <div class="header_item_text">Корзина</div>
+            </div>
+        </a>
     </div>
 
     `

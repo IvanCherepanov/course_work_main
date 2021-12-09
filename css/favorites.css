@@ -158,4 +158,13 @@
     max-width: 1536px;
     width: 97%;
   }
-}/*# sourceMappingURL=favorites.css.map */
+}
+
+@media (max-width: 770px) {
+  .products_main_head {
+    flex-direction: column;
+  }
+  .products_main_head_right {
+    margin: 0 auto;
+  }
+}

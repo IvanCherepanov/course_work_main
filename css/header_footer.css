@@ -14,7 +14,6 @@ a:hover {
   color: #196bb1;
   transition: 0.2s;
 }
-
 .wrapper {
   width: 80%;
   max-width: 1536px;
@@ -70,6 +69,7 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   display: flex;
+
   justify-content: space-between;
   position: -webkit-sticky;
   position: sticky;
@@ -77,7 +77,9 @@ a:hover {
   top: 0;
   box-shadow: 0px 5px 5px 3px rgba(0, 0, 255, 0.2);
 }
-
+.top {
+  display: flex;
+}
 #nav {
   display: flex;
   justify-content: center;
@@ -92,13 +94,13 @@ a:hover {
   align-items: center;
   border: 2px solid blue;
   border-radius: 10px;
-  width: 170px;
+  width: 100px;
   height: 35px;
   transition: 0.3s;
 }
 .nav_menu_list {
   display: none;
-  margin-left: 100px;
+  margin-left: 160px;
   height: 270px;
   width: 250px;
   background-color: white;
@@ -126,7 +128,7 @@ a:hover {
 }
 
 .find {
-  width: 75%;
+  width: 100%;
   margin-left: 3%;
   display: flex;
   align-items: center;
@@ -159,11 +161,13 @@ a:hover {
   color: white;
   background-color: blue;
 }
-
+.top {
+  width: 80%;
+}
 .menu_right_main {
   display: flex;
   justify-content: space-between;
-  width: 370px;
+  width:230px;
 }
 .menu_right_main_item {
   display: flex;
@@ -284,7 +288,7 @@ a:hover {
   }
 
   .find {
-    width: 75%;
+    width: 100%;
     margin-left: 2%;
   }
 
@@ -292,15 +296,79 @@ a:hover {
     width: 95%;
   }
 }
-@media (max-width: 859px) {
-  .nav_menu p {
-    margin-left: 20px;
+
+
+
+@media (max-width: 770px) {
+  
+  .slideshow-container {
+    display: none;
   }
 
+  .dot {
+    display: none;
+  }
+  .news {
+    flex-direction: column;
+    height: 200px;
+ 
+  }
+  .news_main {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .contacts {
+    flex-direction: column;
+  }
+  .footer {
+    height: 100%;
+  }
+  .menu_contacts {
+    width: 100%;
+  }
+  .news_main {
+    flex-direction: column;
+  }
+  .news_main_item:nth-child(1) {
+    width: 200px;
+    margin-bottom: 20px;
+
+  }
+  .news_main_item_in {
+    width: 100%;
+  }
+
+  .news_main {
+    width: 10px;
+  }
+  .nav {
+    width: 70px;
+  }
   .nav_menu {
-    width: 100px;
+    width: 70px;
+  }
+  .find_item {
+    min-width: 30%;
+    width: 100%;
+  }
+
+
+  .menu_bottom {
+    flex-direction: column; 
+  }
+  .menu_right_main {
+    margin: 0 auto;
+  }
+  .top {
+    width: 100%;
   }
   .nav_menu_list {
-    margin-left: 150px;
+    margin-left: 180px;
+  }
+}
+
+@media (max-width: 320px) {
+  .menu_contacts {
+    display: none;
   }
 }

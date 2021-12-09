@@ -324,4 +324,26 @@ button:hover {
   .box {
     width: 95%;
   }
-}/*# sourceMappingURL=product_1.css.map */
+}
+@media (max-width: 770px) {
+  .box_info_item:nth-child(1) {
+    font-size: 24px;
+  }
+  .box_info_item:nth-child(3) {
+    font-size: 27px;
+  }
+  button {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+  }
+  .info_box .box {
+    font-size: 15px;
+  }
+  .character_box .text {
+    font-size: 17px;
+  }
+  .sldr .text {
+    display: none;
+  }
+}
